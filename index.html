@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transaction Explorer</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <title>IPFS Transactions</title>
+   
 </head>
 <body>
-
     <div class="container">
-        <h1>Transaction Explorer</h1>
-
-       
+        <h1>IPFS Transactions</h1>
         <div class="search-container">
             <input type="text" id="searchInput" placeholder="Enter Transaction ID">
             <button class="search-btn" onclick="searchTransaction()">Search</button>
-            <button class="all-btn" onclick="fetchAllTransactions()">Show All Transactions</button>
         </div>
-
-     
+        <div id="loading" class="loading">Loading...</div>
         <table id="transactionTable">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Sender</th>
-                    <th>Receiver</th>
+                    <th>Transaction Index</th>
                     <th>Amount</th>
                     <th>Time</th>
                 </tr>
@@ -33,6 +28,5 @@
             <tbody></tbody>
         </table>
     </div>
-
 </body>
 </html>

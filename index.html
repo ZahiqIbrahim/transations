@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Explorer</title>
+    <link rel="stylesheet" href="/index.css">
+    <script src="/index.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Transaction Explorer</h1>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter Transaction ID">
+            <button class="search-btn" onclick="searchTransaction()">Search</button>
+            <button class="all-btn" onclick="fetchAllTransactions()">Show All Transactions</button>
+        </div>
+
+        <!-- Transaction Table -->
+        <table id="transactionTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Sender</th>
+                    <th>Receiver</th>
+                    <th>Amount</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+</body>
+</html>

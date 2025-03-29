@@ -2,7 +2,6 @@ const corsProxy = "https://api.allorigins.win/raw?url=";
 const allTransactionsApi = "https://koul-network-ipfs.onrender.com/transactions";
 const searchApiUrl = "https://koul-network-ipfs.onrender.com/transaction/";
 
-// Function to fetch all transactions
 async function fetchAllTransactions() {
     try {
         const fullUrl = corsProxy + encodeURIComponent(allTransactionsApi);
@@ -41,7 +40,6 @@ async function fetchAllTransactions() {
     }
 }
 
-// Function to search for a transaction by ID
 async function searchTransaction() {
     const txnId = document.getElementById("searchInput").value.trim();
     if (!txnId) {
@@ -85,5 +83,5 @@ async function searchTransaction() {
     }
 }
 
-// Fetch all transactions when the page loads
+
 fetchAllTransactions();
